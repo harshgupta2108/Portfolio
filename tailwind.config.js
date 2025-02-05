@@ -14,12 +14,17 @@ export default {
         secondary: "#EC4899",
       },
       animation: {
+        "fade-in": "fade-in 0.5s ease-out",
         diagonal: 'slideDiagonal 1.5s ease-out',
         slideFromTop: 'slideFromTop 1s ease-out forwards',
         fadeIn: "fadeIn 1s ease-in-out",
         rotateSlow: "rotate 10s linear infinite",
       },
       keyframes: {
+        "fade-in": {
+          "0%": { opacity: "0", transform: "translateY(-10px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
         slideFromTop: {
           '0%': { opacity: '0', transform: 'translateY(-100%)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
