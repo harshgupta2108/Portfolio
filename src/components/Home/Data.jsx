@@ -4,9 +4,9 @@ function Data() {
   const cvUrl = "https://www.dropbox.com/scl/fi/a98alwn37bqf94sr1ub0y/Manav_Rastogi-Resume-1.pdf?rlkey=8jsxbxgu6fa7626y203w7z7bo&e=1&st=mn6rry9k&dl=0"; // Dropbox URL
 
   return (
-    <div className="flex flex-col items-center p-6 space-y-4  animate-diagonal">
+    <div className="flex  flex-col items-center p-6 space-y-4  animate-diagonal">
       {/* Name and Title */}
-      <div className="text-center animate-diagonal">
+      <div className="text-center font-pacifico animate-diagonal">
         <h1 className="text-2xl  text-center font-bold text-gray-800 dark:text-[#3FFF00] flex items-center space-x-2">
           <span>Manav_Rastogi</span>
           <span>👋</span>
