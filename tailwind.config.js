@@ -14,10 +14,27 @@ export default {
         secondary: "#EC4899",
       },
       animation: {
+        diagonal: 'slideDiagonal 1.5s ease-out',
+        slideFromTop: 'slideFromTop 1s ease-out forwards',
         fadeIn: "fadeIn 1s ease-in-out",
         rotateSlow: "rotate 10s linear infinite",
       },
       keyframes: {
+        slideFromTop: {
+          '0%': { opacity: '0', transform: 'translateY(-100%)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        slideDiagonal: {
+          '0%': {
+            opacity: '0',
+            transform: 'translate(100px, -100px)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translate(0, 0)',
+          },
+  
+        },
         fadeIn: {
           "0%": { opacity: 0 },
           "100%": { opacity: 1 },

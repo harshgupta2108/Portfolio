@@ -62,7 +62,7 @@ function Header() {
           hidden: { opacity: 0 },
           visible: {
             opacity: 1,
-            transition: { staggerChildren: 0.2 },
+            transition: { staggerChildren: 0.3 },
           },
         }}
         className="font-pacifico hidden md:flex space-x-8 text-lg font-semibold text-gray-900 dark:text-white"
