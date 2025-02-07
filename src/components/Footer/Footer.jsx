@@ -9,7 +9,7 @@ const Footer = () => {
         </p>
         <div className="mt-4 flex justify-center space-x-4">
           <a
-            href="https://www.linkedin.com/in/your-profile"
+            href="https://www.linkedin.com/in/manavrastogi03/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-500 text-black dark:text-[#3FFF00]"
@@ -17,7 +17,7 @@ const Footer = () => {
             LinkedIn
           </a>
           <a
-            href="https://github.com/your-profile"
+            href="http://github.com/ManavRastogi03"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gray-400 text-black dark:text-[#3FFF00]"
@@ -25,7 +25,7 @@ const Footer = () => {
             GitHub
           </a>
           <a
-            href="mailto:your-email@example.com"
+            href="mailto:manavrastogi501@gmail.com"
             className="hover:text-green-500 text-black dark:text-[#3FFF00]"
           >
             Email
