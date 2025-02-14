@@ -1,14 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { FiMenu, FiX } from "react-icons/fi"; // Import icons for mobile menu
+import { FiMenu, FiX } from "react-icons/fi";
 
 function Header() {
-  const [darkMode, setDarkMode] = useState(() => {
-    return localStorage.getItem("theme") === "dark";
-  });
-
+  const [darkMode, setDarkMode] = useState(() => localStorage.getItem("theme") === "dark");
   const [colorChange, setColorChange] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false); // Mobile menu state
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     if (darkMode) {
@@ -22,15 +19,13 @@ function Header() {
 
   const scrollToSection = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-    setMenuOpen(false); // Close mobile menu on click
+    setMenuOpen(false);
   };
 
   const handleDarkModeToggle = () => {
     setDarkMode(!darkMode);
     setColorChange(true);
-    setTimeout(() => {
-      setColorChange(false);
-    }, 3000);
+    setTimeout(() => setColorChange(false), 3000);
   };
 
   return (
@@ -40,7 +35,6 @@ function Header() {
       transition={{ duration: 0.9, ease: "easeOut" }}
       className="fixed top-0 left-0 w-full bg-white dark:bg-gray-900 shadow-md p-4 flex justify-between items-center z-50 px-6 md:px-10"
     >
-      {/* Logo with Animated Color Change */}
       <motion.div
         animate={{ color: colorChange ? "#3FFF00" : darkMode ? "#fff" : "#111" }}
         transition={{ duration: 0.3 }}
@@ -54,26 +48,17 @@ function Header() {
         {menuOpen ? <FiX /> : <FiMenu />}
       </button>
 
-      {/* Navigation Links (Desktop) */}
+      {/* Desktop Navigation */}
       <motion.ul
         initial="hidden"
         animate="visible"
-        variants={{
-          hidden: { opacity: 0 },
-          visible: {
-            opacity: 1,
-            transition: { staggerChildren: 0.3 },
-          },
-        }}
+        variants={{ hidden: { opacity: 0 }, visible: { opacity: 1, transition: { staggerChildren: 0.3 } } }}
         className="font-pacifico hidden md:flex space-x-8 text-lg font-semibold text-gray-900 dark:text-white"
       >
         {["home", "about", "skills", "services", "projects", "contact"].map((item, index) => (
           <motion.li
             key={index}
-            variants={{
-              hidden: { opacity: 0, y: 20 },
-              visible: { opacity: 1, y: 0 },
-            }}
+            variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
             transition={{ duration: 0.5, ease: "easeOut" }}
           >
             <button
@@ -95,23 +80,27 @@ function Header() {
           className="fixed top-0 right-0 w-2/3 h-full bg-white dark:bg-gray-900 shadow-lg flex flex-col items-center justify-center space-y-6 text-lg font-semibold text-gray-900 dark:text-white md:hidden"
         >
           {["home", "about", "skills", "services", "projects", "contact"].map((item, index) => (
-            <motion.button
-              key={index}
-              onClick={() => scrollToSection(item)}
-              className="text-xl"
-              whileTap={{ scale: 0.9 }}
-            >
+            <motion.button key={index} onClick={() => scrollToSection(item)} className="text-xl" whileTap={{ scale: 0.9 }}>
               {item.toUpperCase()}
             </motion.button>
           ))}
+
+          {/* Dark Mode Button inside Mobile Menu */}
+          <motion.button
+            whileTap={{ scale: 0.9 }}
+            onClick={handleDarkModeToggle}
+            className="p-2 bg-gray-300 dark:bg-gray-700 rounded-md transition-all duration-300"
+          >
+            {darkMode ? "🌙" : "☀️"}
+          </motion.button>
         </motion.div>
       )}
 
-      {/* Dark Mode Button */}
+      {/* Dark Mode Button (Always Visible) */}
       <motion.button
         whileTap={{ scale: 0.9 }}
         onClick={handleDarkModeToggle}
-        className="hidden md:block p-2 bg-gray-300 dark:bg-gray-700 rounded-md transition-all duration-300"
+        className="p-2 bg-gray-300 dark:bg-gray-700 rounded-md transition-all duration-300"
       >
         {darkMode ? "🌙" : "☀️"}
       </motion.button>

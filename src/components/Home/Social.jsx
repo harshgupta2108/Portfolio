@@ -4,7 +4,8 @@ function Social() {
     
   return (
     <>
-     <div className="social-container animate-slideFromTop w-full h-auto py-8 flex items-center justify-center gap-4 flex-col">  {/* Changed to flex-col */}
+<div className="social-container animate-slideFromTop w-full max-w-screen-lg mx-auto h-auto py-8 flex flex-row sm:flex-col items-center justify-center gap-4 px-4 sm:px-8">
+
      <a
           href="https://www.instagram.com/the_maanavv/" // Replace with your Facebook profile link
           target="_blank"
