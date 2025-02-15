@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html, body {
+    @apply overflow-x-hidden w-screen max-w-full;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+    
