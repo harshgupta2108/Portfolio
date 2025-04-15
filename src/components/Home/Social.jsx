@@ -7,7 +7,7 @@ function Social() {
 <div className="social-container animate-slideFromTop w-full max-w-screen-lg mx-auto h-auto py-8 flex flex-row sm:flex-col items-center justify-center gap-4 px-4 sm:px-8">
 
      <a
-          href="https://www.instagram.com/the_maanavv/" // Replace with your Facebook profile link
+          href="https://www.instagram.com/harsh_guptaa2?igsh=bDg3eXkwMDZvaWds&utm_source=qr" // Replace with your Facebook profile link
           target="_blank"
           rel="noopener noreferrer"
           className="social-btn w-10 h-10 flex items-center justify-center rounded-full relative overflow-hidden bg-white shadow-md shadow-gray-200 group transition-all duration-500"
@@ -38,7 +38,7 @@ function Social() {
 </a>
 
 <a
-          href="https://twitter.com/ManavRastogi17" // Replace with your Facebook profile link
+          href="https://x.com/harsh8184258146?s=21" // Replace with your Facebook profile link
           target="_blank"
           rel="noopener noreferrer"
           className="social-btn w-10 h-10 flex items-center justify-center rounded-full relative overflow-hidden bg-white shadow-md shadow-gray-200 group transition-all duration-500"
@@ -53,7 +53,7 @@ function Social() {
 
 
 <a
-          href="https://wa.me/919528321676?text=Hello%20Manav!%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect." // Replace with your Facebook profile link
+          href="https://wa.me/qr/HMBUUUBAP26OO1" // Replace with your Facebook profile link
           target="_blank"
           rel="noopener noreferrer"
           className="social-btn w-10 h-10 flex items-center justify-center rounded-full relative overflow-hidden bg-white shadow-md shadow-gray-200 group transition-all duration-500"
@@ -71,7 +71,7 @@ function Social() {
 
 
 <a
-          href="https://www.linkedin.com/in/manavrastogi03/" // Replace with your Facebook profile link
+          href="https://www.linkedin.com/in/harsh-gupta-83514825b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" // Replace with your Facebook profile link
           target="_blank"
           rel="noopener noreferrer"
           className="social-btn w-10 h-10 flex items-center justify-center rounded-full relative overflow-hidden bg-white shadow-md shadow-gray-200 group transition-all duration-500"
@@ -85,7 +85,7 @@ fill=""/>
 
 
 <a
-          href="https://t.me/+919528321676" // Replace with your Facebook profile link
+          href="https://t.me/harsh_gupta2108" // Replace with your Facebook profile link
           target="_blank"
           rel="noopener noreferrer"
           className="social-btn w-10 h-10 flex items-center justify-center rounded-full relative overflow-hidden bg-white shadow-md shadow-gray-200 group transition-all duration-500"
@@ -100,7 +100,7 @@ xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 72 72" fi
 </a>
 
 <a
-          href="mailto:manavrastogi501@gmail.com" // Replace with your Facebook profile link
+          href="mailto:harshgupta89232108@gmail.com" // Replace with your Facebook profile link
           target="_blank"
           rel="noopener noreferrer"
           className="social-btn w-10 h-10 flex items-center justify-center rounded-full relative overflow-hidden bg-white shadow-md shadow-gray-200 group transition-all duration-500"

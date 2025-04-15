@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import profileImage from "../../assets/Manav.png"; // Replace with your actual image path
+import profileImage from "../../assets/Harsh.png"; // Replace with your actual image path
 
 const About = () => {
   const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.2 });
@@ -39,7 +39,7 @@ const About = () => {
           <div className="grid grid-cols-3 gap-4 mb-4">
             {[
               { label: "Experience", value: "1 year" },
-              { label: "Completed", value: "10+ projects" },
+              { label: "Completed", value: "5+ projects" },
               { label: "Support", value: "24/7" },
             ].map((stat, index) => (
               <motion.div
@@ -62,9 +62,8 @@ const About = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-gray-700 font-[Pacifico] dark:text-[#3FFF00] mb-6"
           >
-            I am a passionate Full Stack Developer with expertise in Frontend
-            (HTML, CSS, JavaScript, React.js, Tailwind CSS) and Backend
-            (Express.js, Node.js, MongoDB). I also specialize in GitHub for
+            I am a passionate Feont End Developer with expertise in 
+            (HTML, CSS, JavaScript, React.js, Bootstrap) and Database (MongoDB , MySQL). I also specialize in GitHub for
             version control and JWT authentication.
             <br />
             I have a strong interest in Data Science, Generative AI, and Power

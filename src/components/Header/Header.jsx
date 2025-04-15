@@ -38,7 +38,7 @@ function Header() {
         transition={{ duration: 0.3 }}
         className="font-pacifico text-2xl font-bold"
       >
-        Manav_Rastogi
+        Harsh Gupta
       </motion.div>
 
       {/* Desktop Navigation */}

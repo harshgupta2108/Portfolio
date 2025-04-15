@@ -1,19 +1,20 @@
 import React from "react";
 
 function Data() {
-  const cvUrl = "https://www.dropbox.com/scl/fi/3z4y9z02rchbz23hjmuc2/MANAV_RASTOGIv.2.pdf?rlkey=1fo7db5kmyufarbhq3ak3gthn&st=kq91ktce&dl=0"; // Dropbox URL
+  const cvUrl = "https://drive.google.com/file/d/1VQrGCUx-2EQ_jFYKlUxIT72ETMbrXIZM/view?usp=drivesdk"; // Dropbox URL
 
   return (
     <div className="flex  flex-col items-center p-6 space-y-4  animate-diagonal">
       {/* Name and Title */}
       <div className="text-center font-pacifico animate-diagonal">
         <h1 className="text-2xl  text-center font-bold text-gray-800 dark:text-[#3FFF00] flex items-center space-x-2">
-          <span>Manav_Rastogi</span>
+        <span>👋</span>
+          <span>  Harsh Gupta</span>
           <span>👋</span>
         </h1>
         <h2 className="text-lg text-gray-500 mt-1 dark:text-[#3FFF00] animate-diagonal">
-          <h2>Full Stack Web developer</h2>
-          <h2>Data Science and Generative Ai</h2> 
+          <h2>Front End Web developer</h2>
+          <h2>Tech Enthusiast</h2> 
         </h2>
       </div>
 

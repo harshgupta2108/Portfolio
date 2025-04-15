@@ -3,6 +3,14 @@ import { motion, AnimatePresence, useInView } from "framer-motion";
 import { X } from "lucide-react";
 import emailjs from "@emailjs/browser";
 
+
+<input
+  type="hidden"
+  name="to_email"
+  value="harshgupta89232108@gmail.com" // <-- Replace this with your new email
+/>
+
+
 const ContactMe = () => {
   const [showForm, setShowForm] = useState(false);
   const [sent, setSent] = useState(false);
@@ -14,7 +22,7 @@ const ContactMe = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
-      .sendForm("service_iv6fafp", "template_95g9hwe", formRef.current, "e4NIO7CqQZhkBkKbq")
+      .sendForm("service_iv6fafp", "template_o1crz2p", formRef.current, "e4NIO7CqQZhkBkKbq")
       .then(() => {
           setSent(true);
           setTimeout(() => {

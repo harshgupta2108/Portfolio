@@ -6,7 +6,7 @@ import { Clipboard, Check } from "lucide-react";
 const AnimatedText = () => {
   const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.2 });
 
-  const email = "manavrastogi501@gmail.com"; // Change to your email
+  const email = "harshgupta89232108@gmail.com"; // Change to your email
   const [copied, setCopied] = useState(false);
 
   // Function to copy email to clipboard
