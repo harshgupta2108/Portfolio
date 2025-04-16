@@ -1,7 +1,7 @@
 import React from "react";
 
 function Data() {
-  const cvUrl = "https://drive.google.com/file/d/1VQrGCUx-2EQ_jFYKlUxIT72ETMbrXIZM/view?usp=drivesdk"; // Dropbox URL
+  const cvUrl = "https://www.dropbox.com/scl/fi/v4ynz927hopctjgrkskr6/Harsh-Resume.pdf?rlkey=ryw6v1vl0n7dhbycr1p4itp9d&st=0jm0lvax&dl=0"; // Dropbox URL
 
   return (
     <div className="flex  flex-col items-center p-6 space-y-4  animate-diagonal">

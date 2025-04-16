@@ -1,7 +1,7 @@
 import React from "react";
 import Social from "./Social.jsx";
 import Data from "./Data.jsx";
-import Image from "../../assets/harsh.png";
+import Image from "../../assets/new3.jpeg";
 
 function Home() {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import profileImage from "../../assets/harsh.png"; // Replace with your actual image path
+import profileImage from "../../assets/new.jpeg"; // Replace with your actual image path
 
 const About = () => {
   const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.2 });
